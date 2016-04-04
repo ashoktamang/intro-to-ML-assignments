@@ -22,14 +22,10 @@ class Question:
         nearest = self.closest(result)
 
         print(self.label)
-        print("  result:  {0}".format(result))
-        print("  nearest: {0}".format(self.choice(nearest)))
+      
         print("  answer:  {0}".format(self.choice(self.answer)))
 
-        if nearest == self.answer:
-            print("  + CORRECT")
-        else:
-            print("  - INCORRECT")
+
 
     def closest_choice(self, scores, result):
         # returns index, nearest
